@@ -61,8 +61,9 @@ using System.Linq;
 using Newtonsoft.Json;
 
 using Skyline.DataMiner.Automation;
-using Skyline.DataMiner.Library.Common.InterAppCalls.CallBulk;
-using Skyline.DataMiner.Library.Common.InterAppCalls.Shared;
+
+using Skyline.DataMiner.Core.InterAppCalls.Common.CallBulk;
+using Skyline.DataMiner.Core.InterAppCalls.Common.Shared;
 using Skyline.Protocol.EpmApi;
 
 public class Script
@@ -106,7 +107,7 @@ namespace Skyline.Protocol
 	namespace EpmApi
 	{
 
-		public class Message : Skyline.DataMiner.Library.Common.InterAppCalls.CallSingle.Message
+		public class Message : Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle.Message
 		{
 			[JsonProperty("workflow")] public string Workflow { get; set; }
 
